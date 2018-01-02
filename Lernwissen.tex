@@ -1,0 +1,48 @@
+% Format und Encodierung
+\documentclass[a4paper, pdftex, 12pt, ngerman]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+
+% Links
+\usepackage{hyperref}
+\usepackage{url}
+
+% Grafiken
+\usepackage{graphicx}
+\usepackage{float}
+
+% Mathematik
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+
+% Listings
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{color}
+
+% Tabellen
+\usepackage{longtable}
+
+% Kopf- und Fußzeile
+\usepackage[headsepline,footsepline]{scrpage2}
+
+% Seitenränder
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+
+% Kopf- und Fußzeilendefinition
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\cfoot{Kurzwissen für das Mathematikabitur in Thüringen (\today)}
+\ofoot{\pagemark}
+\setheadtopline{0pt}
+\setheadsepline{0pt}
+
+\input{includes/Analysis_1.tex}
+\input{includes/Analytische_Geometrie.tex}
+
+\end{document}
