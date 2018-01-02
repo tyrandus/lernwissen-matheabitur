@@ -218,3 +218,10 @@ TSWLatexianTemp*
 
 # expex forward references with \gathertags
 *-tags.tex
+
+# VS Code
+/.vscode/*
+/.vscodde
+
+# PDFs
+*.pdf
