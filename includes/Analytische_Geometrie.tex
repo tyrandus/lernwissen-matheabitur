@@ -4,67 +4,102 @@
 \section{Grundlagen}
 \begin{itemize}
 
-  \item \textbf{Vektoren aufstellen}: Sind $P(x_P~|~y_P)$ und $Q(x_Q~|~y_Q)$ zwei Punkte in $\mathbb{R}^2$ bzw. $P(x_P~|~y_P~|~z_P)$ und $Q(x_Q~|~y_Q~|~z_Q)$ zwei Punkte in $\mathbb{R}^3$, so gilt:
+  \item \textbf{Vektoren aufstellen}:
+  Sind $P(x_P~|~y_P)$ und $Q(x_Q~|~y_Q)$ zwei Punkte in $\mathbb{R}^2$
+  bzw. $P(x_P~|~y_P~|~z_P)$ und $Q(x_Q~|~y_Q~|~z_Q)$ zwei Punkte in
+  $\mathbb{R}^3$, so gilt:
   \begin{equation}
-    \overrightarrow{PQ}=\left(\begin{array}{c}x_Q-x_P \\ y_Q-y_P \end{array}\right)
+    \overrightarrow{PQ}=\left(
+      \begin{array}{c}
+        x_Q - x_P \\ y_Q - y_P \\ (z_Q - z_P)
+      \end{array}
+    \right)
   \end{equation}
 
   \item \textbf{Ortsvektor}:
-  Der Ortsvektor eines Punktes $P(x~|~y)$ ist der Vektor vom Koordinatenursprung $O(0~|~0)$ zu diesem Punkt. Es gilt:
+  Der Ortsvektor eines Punktes $P(x~|~y)$ ist der Vektor vom
+  Koordinatenursprung $O(0~|~0)$ zu diesem Punkt. Es gilt:
   \begin{equation}
-    \overrightarrow{OP}=\left(\begin{array}{c}x \\ y \end{array}  \right)
+    \overrightarrow{OP}=\left(
+      \begin{array}{c} x \\ y \\ (z) \end{array}
+    \right)
   \end{equation}
 
-  \item \textbf{Betrag}: Ist der Betrag des Vektors gleich 1, so spricht man von einem Einheitsvektor. Für den Betrag eines Vektors gilt:
+  \item \textbf{Betrag}:
+  Ist der Betrag des Vektors gleich 1, so spricht man von einem
+  Einheitsvektor. Für den Betrag eines Vektors gilt:
   \begin{equation}
-  \overrightarrow{a}=\left(\begin{array}{c}x\\y\\(z)\end{array}\right) \Rightarrow \left|\overrightarrow{a}\right| = \sqrt{x^2+y^2(+z^2)}
+    \overrightarrow{a}=
+      \left(\begin{array}{c} x \\ y \\ (z) \end{array}\right)
+      \Rightarrow \left| \overrightarrow{a} \right|
+      = \sqrt{ x^2 + y^2 (+ z^2) }
   \end{equation}
 
-  \item \textbf{Addition}: Die Summe zweier Vektoren kann beschrieben werden durch:
+  \item \textbf{Addition}:
+  Die Summe zweier Vektoren kann beschrieben werden durch:
   \begin{equation}
-    \overrightarrow{a}=\overrightarrow{AB}; \overrightarrow{b}=\overrightarrow{BC} \Rightarrow \overrightarrow{c} = \overrightarrow{a} + \overrightarrow{b} = \overrightarrow{AC}
+    (\overrightarrow{a} = \overrightarrow{AB}) \wedge
+    (\overrightarrow{b} = \overrightarrow{BC}) \Rightarrow \overrightarrow{c} = \overrightarrow{a} + \overrightarrow{b} = \overrightarrow{AC}
   \end{equation}
 
 \end{itemize}
 
 \section{Linearkombination von Vektoren}
 \begin{itemize}
-  \item \textbf{kollinear}: Ein Vektor ist ein Vielfaches des anderen. $\overrightarrow{a}$ und $\overrightarrow{b}$ sind linear abhängig und parallel zueinander; sie spannen keine Ebene auf.
+  \item \textbf{kollinear}:
+  Ein Vektor ist ein Vielfaches des anderen. $\overrightarrow{a}$
+  und $\overrightarrow{b}$ sind linear abhängig und parallel
+  zueinander; sie spannen keine Ebene auf.
   \begin{equation}
-    \overrightarrow{a}=r\cdot\overrightarrow{b}
+    \overrightarrow{a} = r \cdot \overrightarrow{b}
   \end{equation}
 
-  \item \textbf{komplanar}: Mit zwei linear unabhängigen Vektoren lässt sich ein dritter darstellen. $\overrightarrow{a}$, $\overrightarrow{b}$ und $\overrightarrow{c}$ liegen in einer Ebene und spannen keinen Raum auf.
+  \item \textbf{komplanar}:
+  Mit zwei linear unabhängigen Vektoren lässt sich ein dritter
+  darstellen. $\overrightarrow{a}$, $\overrightarrow{b}$ und
+  $\overrightarrow{c}$ liegen in einer Ebene und spannen keinen
+  Raum auf.
   \begin{equation}
-    \overrightarrow{a}=r\cdot\overrightarrow{b}+s\cdot\overrightarrow{c}
+    \overrightarrow{a} = r \cdot \overrightarrow{b} + s \cdot \overrightarrow{c}
   \end{equation}
 \end{itemize}
 
 \newpage
 \section{Skalarprodukt}
-Für zwei Vektoren $\overrightarrow{a}=\left(\begin{array}{c}x_a\\ y_a\\(z_a)\end{array}\right)$ und $\overrightarrow{b}=\left(\begin{array}{c}x_b\\ y_b\\(z_b)\end{array}\right)$ gilt:
+Für zwei Vektoren
+$\overrightarrow{a} = \left(\begin{array}{c} x_a \\ y_a \\ (z_a)
+\end{array}\right)$ und $\overrightarrow{b} = \left(\begin{array}{c}
+x_b \\ y_b \\(z_b) \end{array}\right)$ gilt:
 \begin{align}
-  \overrightarrow{a}\cdot\overrightarrow{b}
+  \overrightarrow{a} \cdot \overrightarrow{b}
   &= x_a \cdot x_b + y_a \cdot y_b (+z_a \cdot z_b) \\
-  \cos\measuredangle(\overrightarrow{a},\overrightarrow{b})
-  &= \frac{\overrightarrow{a}\cdot\overrightarrow{b}}{|\overrightarrow{a}|\cdot|\overrightarrow{b}|}
+  \cos \measuredangle (\overrightarrow{a},\overrightarrow{b})
+  &= \frac{\overrightarrow{a} \cdot \overrightarrow{b}}
+  {| \overrightarrow{a} | \cdot | \overrightarrow{b} |}
 \end{align}
-Mit dem CAS berechnet man das Skalarprodukt durch \glqq dotP($\overrightarrow{a},\overrightarrow{b}$)\grqq.
+Mit dem CAS berechnet man das Skalarprodukt durch
+\glqq dotP($\overrightarrow{a}, \overrightarrow{b}$)\grqq.
 % TODO: Veranschaulichung ergänzen.
 
 
 \section{Vektorprodukt}
-Für zwei Vektoren $\overrightarrow{a}=\left(\begin{array}{c}x_a\\ y_a\\ z_a\end{array}\right)$ und $\overrightarrow{b}=\left(\begin{array}{c}x_b\\ y_b\\ z_b\end{array}\right)$ gilt:
+Für zwei Vektoren
+$\overrightarrow{a} = \left(\begin{array}{c} x_a \\ y_a \\ (z_a) \end{array} \right)$
+und
+$\overrightarrow{b} = \left(\begin{array}{c} x_b \\ y_b \\(z_b) \end{array}\right)$
+gilt:
 \begin{align}
-  \overrightarrow{a}\times\overrightarrow{b}
-  &=-\overrightarrow{b}\times\overrightarrow{a}
-  =\left(\begin{array}{c}
+  \overrightarrow{a} \times \overrightarrow{b}
+  &= - \overrightarrow{b} \times \overrightarrow{a}
+  = \left( \begin{array}{c}
     y_a \cdot z_b - z_a \cdot y_b \\
     z_a \cdot x_b - x_a \cdot z_b \\
     x_a \cdot y_b - y_a \cdot x_b
-  \end{array}\right) \\
-  \sin\measuredangle(\overrightarrow{a},\overrightarrow{b})
-  &= \frac{|\overrightarrow{a}\times\overrightarrow{b}|}{|\overrightarrow{a}|\cdot|\overrightarrow{b}|}
+  \end{array} \right) \\
+  \sin \measuredangle (\overrightarrow{a}, \overrightarrow{b})
+  &= \frac{| \overrightarrow{a} \times \overrightarrow{b} |}
+  {| \overrightarrow{a} | \cdot | \overrightarrow{b} |}
 \end{align}
-Mit dem CAS berechnet man das Vektorprodukt durch \glqq crossP($\overrightarrow{a},\overrightarrow{b}$)\grqq.
+Mit dem CAS berechnet man das Vektorprodukt durch
+\glqq crossP($\overrightarrow{a}, \overrightarrow{b}$)\grqq.
 % TODO: Veranschaulichung ergänzen

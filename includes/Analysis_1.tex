@@ -6,19 +6,21 @@
 
     (1) Definitionsbereich $\mathbb{D}$
     & alle x, für die ein Funktionswert definiert ist \\
-    & $f(x)=\sin(x) \Rightarrow \mathbb{D}: \mathbb{R}$ \\
-    & $f(x)=\ln(x) \Rightarrow \mathbb{D}: \mathbb{R}_0^+ $ \\
+    & $f(x) = \sin(x) \Rightarrow \mathbb{D}: \mathbb{R}$ \\
+    & $f(x) = \ln(x) \Rightarrow \mathbb{D}: \mathbb{R}_0^+ $ \\
     \\ \hline \\
 
     (2) Wertebereich $\mathbb{W}$
     & alle y, denen ein Urbild x zugeordnet werden kann \\
-    & $f(x) = \sin(x) \Rightarrow \mathbb{W} = \{y\in\mathbb{R}~|~-1 \le y \le 1\}$ \\ \\ \hline \\
+    & $f(x) = \sin(x) \Rightarrow \mathbb{W}
+    = \{y \in \mathbb{R}~|~-1 \le y \le 1\}$ \\ \\ \hline \\
 
     (3) Achsenschnittpunkte
-    & $f(x_0)=0, f(0)=y_0$ \\ \\ \hline \\
+    & $f(x_0) = 0, f(0) = y_0$ \\ \\ \hline \\
 
     (4) Grenzwerte
-    & $f(x) = x^3 \Rightarrow \lim\limits_{x \rightarrow \infty}f(x) = \infty$ \\ \\ \hline \\
+    & $f(x) = x^3 \Rightarrow
+    \lim\limits_{x \rightarrow \infty}f(x) = \infty$ \\ \\ \hline \\
 
 %   \end{tabular}
 % \end{table}
@@ -28,21 +30,21 @@
 %   \begin{tabular}{l|l}
 
     (5) Symmetrie
-    & axialsymmetrisch: $f(x)=f(-x)$ \\
+    & axialsymmetrisch: $f(x) = f(-x)$ \\
     & oder*: alle Exponenten sind gerade \\ \\
-    & punktsymmetrisch: $f(-x)=-f(x)$ \\
+    & punktsymmetrisch: $f(-x) = -f(x)$ \\
     & oder*: alle Exponenten sind ungerade \\
     & (*gilt nur für ganz-rationale Funktionen) \\ \\ \hline \\
 
     (6) Extrema
-    & Bedingung 1: $f'(x_0)=0$ \\
+    & Bedingung 1: $f'(x_0) = 0$ \\
     & Bedingung 2: $f''(x_0) \neq 0$ \\ \\
-    & $f''(x)=0 \Rightarrow $ Sattelpunkt \\
-    & $f''(x)>0 \Rightarrow $ Tiefpunkt $(x_0 ~|~ f(x_0))$ \\
-    & $f''(x)<0 \Rightarrow $ Hochpunkt $(x_0 ~|~ f(x_0))$ \\ \\ \hline \\
+    & $f''(x) =0 \Rightarrow $ Sattelpunkt \\
+    & $f''(x) >0 \Rightarrow $ Tiefpunkt $(x_0 ~|~ f(x_0))$ \\
+    & $f''(x) <0 \Rightarrow $ Hochpunkt $(x_0 ~|~ f(x_0))$ \\ \\ \hline \\
 
     (7) Wendepunkte
-    & Bedingung 1: $f''(x_0)=0$ \\
+    & Bedingung 1: $f''(x_0) = 0$ \\
     & Bedingung 2: $f'''(x_0) \neq 0$ \\ \\ \hline \\
 
     (8) Graph der Funktion
@@ -57,11 +59,22 @@
 \begin{table}[H]
   % \centering
   \begin{tabular}{lll}
-    (1) Potenzregel     &$f(x)=x^n$           &$f'(x)=nx^{n-1}$ \\
-    (2) Summenregel     &$f(x)=u(x)\pm v(x)$  &$f'(x)=u'(x) \pm v'(x)$ \\
-    (3) Produktregel    &$f(x)=u(x)\cdot v(x)$     &$f'(x)=u'(x)\cdot v(x) + v'(x)\cdot u(x)$ \\
-    (4) Quotientenregel &$f(x)=\frac{u(x)}{v(x)}$     &$f'(x)=\frac{u'(x)\cdot v(x)-v'(x)\cdot u(x)}{v^2}(=\frac{u'v-v'u}{v^2})$\\
-    (5) Kettenregel     &$f(x)=u(v(x))$       &$f'(x)=u'(v(x))\cdot v'(x)$
+    (1) Potenzregel
+      &$f(x)  = x^n$
+      &$f'(x) = nx^{n-1}$ \\
+    (2) Summenregel
+      &$f(x)  = u(x) \pm v(x)$
+      &$f'(x) = u'(x) \pm v'(x)$ \\
+    (3) Produktregel
+      &$f(x)  = u(x) \cdot v(x)$
+      &$f'(x) = u'(x) \cdot v(x) + v'(x) \cdot u(x)$ \\
+    (4) Quotientenregel
+      &$f(x)  = \frac{u(x)}{v(x)}$
+      &$f'(x) = \frac{u'(x) \cdot v(x) - v'(x) \cdot u(x)}{v^2}
+      (= \frac{u'v - v'u}{v^2})$\\
+    (5) Kettenregel
+      &$f(x)  = u(v(x))$
+      &$f'(x) = u'(v(x)) \cdot v'(x)$
   \end{tabular}
 \end{table}
 \renewcommand{\arraystretch}{1}
@@ -93,31 +106,44 @@
 \subsection{Tangenten und Normalen}
 \begin{table}[H]
   \begin{tabular}{ll}
-    Tangente: &$y-y_0=m_T\cdot (x-x_0)$ für $P_0(x_0, y_0)$ und $m_T=f'(x)$ \\
-    Normale:  &$y-y_0=m_N\cdot (x-x_0)$ für $P_0(x_0, y_0)$ und $m_N=-\frac{1}{m_T}$ \\
+    Tangente: &$y - y_0 = m_T \cdot (x - x_0)$ für $P_0(x_0, y_0)$
+    und $m_T = f'(x)$ \\
+    Normale:  &$y - y_0 = m_N \cdot (x - x_0)$ für $P_0(x_0, y_0)$
+    und $m_N = -\frac{1}{m_T}$ \\
     & steht immer orthogonal (senkrecht) zur Tangente
   \end{tabular}
 \end{table}
 
 \subsection{Berührungspunkt}
 \begin{itemize}
-  \item Haben zwei Funktionen $f(x)$ und $g(x)$ an einer Stelle $x_a$ denselben Funktionswert $f(x_a)=g(x_a)$ und denselben Anstieg $f'(x_a)=g'(x_a)$, so berühren sie sich im Punkt $(x_a~|~f(x_a))$.
+  \item Haben zwei Funktionen $f(x)$ und $g(x)$ an einer Stelle $x_a$ denselben
+  Funktionswert $f(x_a)=g(x_a)$ und denselben Anstieg $f'(x_a)=g'(x_a)$, so
+  berühren sie sich im Punkt $(x_a, f(x_a))$.
 \end{itemize}
 
 \subsection{Gebrochen rationale Funktionen}
 \begin{itemize}
-  \item Eine Funktion gilt als \textbf{echt gebrochen}, wenn der höchste Grad aller Potenzen der Funktionsvariablen im Zähler kleiner als der höchste Grad aller Potenzen der Funktionsvariablen im Nenner ist.\\
-  \textit{Beispiel: $f(x)=\frac{2x^2}{x^3}$ ist eine echt gebrochen rationale Funktion, $f(x)=\frac{2x^3}{x^2}$ nicht.}
+  \item Eine Funktion gilt als \textbf{echt gebrochen}, wenn der höchste Grad
+  aller Potenzen der Funktionsvariablen im Zähler kleiner als der höchste Grad
+  aller Potenzen der Funktionsvariablen im Nenner ist.\\
+  \textit{Beispiel: $f(x) = \frac{2x^2}{x^3}$ ist eine echt gebrochen rationale
+  Funktion, $f(x) = \frac{2x^3}{x^2}$ nicht.}
 
-  \item Hat eine Funktion $f$ die Form $f(x)=\frac{ax^k}{bx^k}$, so gilt: $\lim\limits_{x \rightarrow \infty}f(x)=\frac{a}{b}$ (\textbf{Limestrick})
+  \item Hat eine Funktion $f$ die Form $f(x) = \frac{ax^k}{bx^k}$, so gilt:
+  $\lim\limits_{x \rightarrow \infty} f(x) = \frac{a}{b}$ (\textbf{Limestrick})
 
-  \item Eine \textbf{Polstelle} hat eine gebrochen rationale Funktion $f(x)=\frac{u(x)}{v(x)}$ an der Stelle $x_P$, wenn $v(x_P)=0$ und $u(x_P)\neq0$.
+  \item Eine \textbf{Polstelle} hat eine gebrochen rationale Funktion
+  $f(x) = \frac{u(x)}{v(x)}$ an der Stelle $x_P$,
+  wenn $v(x_P) = 0$ und $u(x_P) \neq 0$.
 
-  \item Eine \textbf{Definitionslücke} hat eine gebrochen rationale Funktion $f(x)=\frac{u(x)}{v(x)}$ an der Stelle $x_P$, wenn $v(x_P)=u(x_P)=0$.
+  \item Eine \textbf{behebbare Definitionslücke} hat eine gebrochen rationale Funktion $f(x) = \frac{u(x)}{v(x)}$ an der Stelle $x_P$,
+  wenn $v(x_P) = u(x_P) = 0$.
 
   \item \textbf{Asymptoten}: Alle Polstellen sind x-Asymptoten. y-Asymptoten entsprechen dem ganzrationalen Teil am Ende der Polynomdivision.
 
-  \item Auf dem CAS lässt sich \textbf{Polynomdivision} über den Befehl \glqq propFrac\grqq~ausführen. Es ist allerdings empfohlen, die entsprechenden Schritte auch von Hand vollziehen zu können.
+  \item Auf dem CAS lässt sich \textbf{Polynomdivision} über den Befehl
+  \glqq propFrac\grqq~ausführen. Es ist allerdings empfohlen, die
+  entsprechenden Schritte auch von Hand vollziehen zu können.
 \end{itemize}
 
 \newpage
@@ -126,26 +152,32 @@
 Gleichung (1) ist bekannt als die Newton-Leibniz-Formel.
 
 \begin{align}
-  \int\limits_a^bf(x)dx &= F(b)-F(a) \\
-  \int\limits_a^bf(x)dx &= -\int\limits_b^af(x)dx \\
-  \int\limits_a^af(x)dx &= 0 \\
-  \int\limits_a^cf(x)dx &= \int\limits_a^bf(x)dx + \int\limits_b^cf(x)dx \\
-  \int\limits_a^bk\cdot f(x)dx &= k\cdot \int\limits_a^bf(x)dx\\
-  \int\limits_a^bf(x)dx + \int\limits_a^bg(x)dx &= \int\limits_a^b(f(x)+g(x))dx
+  \int\limits_a^b f(x) dx &= F(b)-F(a) \\
+  \int\limits_a^b f(x) dx &= -\int\limits_b^a f(x) dx \\
+  \int\limits_a^a f(x) dx &= 0 \\
+  \int\limits_a^c f(x) dx
+    &= \int\limits_a^b f(x) dx + \int\limits_b^c f(x) dx \\
+  \int\limits_a^b k \cdot f(x) dx
+    &= k \cdot \int\limits_a^b f(x) dx\\
+  \int\limits_a^b f(x) dx + \int\limits_a^b g(x) dx
+    &= \int\limits_a^b (f(x) + g(x)) dx
 \end{align}
 
 % TODO: Beispiele für Integration abtippen und an angemessener Stelle einbinden
 
 \subsection{Unbestimmtes Integral}
-Ein unbestimmtes Integral bezeichnet die Gesamtheit aller Stammfunktionen einer Funktion, da es keine Integrationsgrenzen enthält.
+Ein unbestimmtes Integral bezeichnet die Gesamtheit aller Stammfunktionen einer
+Funktion, da es keine Integrationsgrenzen enthält.
 \begin{equation}
-  \int f(x)dx=F(x)+C ~|~ C\in\mathbb{R}
+  \int f(x) dx = F(x) + C ~|~ C\in \mathbb{R}
 \end{equation}
 
 \subsection{Uneigentliches Integral}
-Ein uneigentliches Integral ist ein Integral, bei dem mindestens eine der Integrationsgrenzen $\pm\infty$ ist. Die Berechnung erfolgt dann über die Grenzwertbetrachtung der Stammfunktion.
+Ein uneigentliches Integral ist ein Integral, bei dem mindestens eine der
+Integrationsgrenzen $\pm\infty$ ist. Die Berechnung erfolgt dann über die
+Grenzwertbetrachtung der Stammfunktion.
 \begin{equation}
-  \int\limits_F^\infty f(x) = \lim\limits_{n\rightarrow\infty}(F(n)-F(1))
+  \int\limits_1^\infty f(x) = \lim\limits_{n \rightarrow \infty}(F(n) - F(1))
 \end{equation}
 % TODO: Beispiel einfügen / referenzieren
 % \begin{align*}
